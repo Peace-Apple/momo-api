@@ -2,9 +2,9 @@ import os
 from mtnmomo.collection import Collection
 
 client = Collection({
-    "COLLECTION_USER_ID": "ff6552c6-b972-46dc-8a81-dee747192f1d",
-    "COLLECTION_API_SECRET": "22a1a0745f1d41d5aeb90d0e03c409c0",
-    "COLLECTION_PRIMARY_KEY": "ae71f8ac0c7e48a99020fe721b886560"
+    "COLLECTION_USER_ID": os.environ.get('COLLECTION_USER_ID'),
+    "COLLECTION_API_SECRET": os.environ.get('COLLECTION_API_SECRET'),
+    "COLLECTION_PRIMARY_KEY": os.environ.get('COLLECTION_PRIMARY_KEY')
 })
 
 
